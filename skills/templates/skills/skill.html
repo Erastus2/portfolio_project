@@ -1,0 +1,45 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block head %}
+<link rel="stylesheet" href="{% static 'css/skills.css' %}">
+{% endblock %}
+
+{% block content %}
+<section class="skills-page">
+
+  <header class="skills-header">
+    <h1>Technical Skills & Expertise</h1>
+    <p>
+      Technologies, architectures, patterns, and tools I use to design,
+      build, and maintain scalable software systems.
+    </p>
+  </header>
+
+  {% for group in groups %}
+  <div class="skills-group">
+    <h2 class="group-title">{{ group.name }}</h2>
+
+    <div class="categories">
+      {% for category in group.categories.all %}
+      <div class="category-card">
+
+        <h3 class="category-title">{{ category.name }}</h3>
+
+        <ul class="skills-list">
+          {% for skill in category.items.all %}
+          <li class="skill-item {% if skill.is_core %}core{% endif %}">
+            <span class="skill-name">{{ skill.name }}</span>
+            <span class="skill-level">{{ skill.proficiency }}</span>
+          </li>
+          {% endfor %}
+        </ul>
+
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+  {% endfor %}
+
+</section>
+{% endblock %}

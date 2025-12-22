@@ -1,0 +1,43 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block head %}
+<link rel="stylesheet" href="{% static 'css/blog.css' %}">
+{% endblock %}
+
+{% block content %}
+<main class="blog-detail-page">
+
+  <!-- Blog Header -->
+  <header class="blog-header">
+    <h1 class="blog-title">{{ post.title }}</h1>
+    <p class="blog-date">{{ post.created_at|date:"F d, Y" }}</p>
+    <p class="blog-excerpt">{{ post.excerpt }}</p>
+  </header>
+
+  <!-- Blog Content -->
+  <section class="blog-content">
+    {% for block in blocks %}
+      
+      {% if block.block_type == "text" %}
+        <div class="blog-text-block">
+          <p>{{ block.text|linebreaks }}</p>
+        </div>
+
+      {% elif block.block_type == "image" %}
+        <div class="blog-image-block">
+          <img src="{{ block.image.url }}" alt="{{ post.title }}" loading="lazy">
+        </div>
+
+      {% endif %}
+
+    {% endfor %}
+  </section>
+
+  <!-- Optional Back Link -->
+  <footer class="blog-footer">
+    <a href="{% url 'blogs:blog_list' %}" class="back-link">← Back to all posts</a>
+  </footer>
+
+</main>
+{% endblock %}

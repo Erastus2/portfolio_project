@@ -1,0 +1,36 @@
+{%  extends "base.html" %}
+{% load static %}
+{% block content %}
+<section class="about-page">
+  <div class="about-container">
+    <h1>About Me</h1>
+    
+    <div class="about-content">
+      <div class="about-text">
+        <p>
+          Hi, I'm Erastus, a passionate software engineer with a love for building scalable and 
+          efficient web applications. I have experience in backend and frontend development, 
+          working with modern frameworks and databases to deliver robust solutions.
+        </p>
+
+        <p>
+          I enjoy solving complex problems, writing clean and maintainable code, and continuously 
+          learning the latest technologies in software development. My approach is always user-focused 
+          and performance-oriented.
+        </p>
+
+        <p>
+          Curious to see what I can do? Check out my <a href="{% url 'skills:skill' %}">Skills</a> page to explore my expertise in detail.
+        </p>
+        
+        <a href="{% url 'projects:project' %}" class="btn btn-primary">View Projects</a>
+      </div>
+
+      <div class="about-image">
+        <img src="{% static 'images/programmer-Erastus.jpg' %}" alt="Erastus - Software Engineer">
+      </div>
+    </div>
+  </div>
+</section>
+
+{% endblock%}

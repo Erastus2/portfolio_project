@@ -1,0 +1,62 @@
+{% extends "base.html" %}
+{% load static %}
+{% block head %}
+<link rel="stylesheet" href="{% static 'css/projects.css'%}">
+{% endblock %}
+
+{% block content %}
+<section class="projects-page">
+
+  <header class="projects-header">
+    <h1>Projects</h1>
+    <p>
+      A selection of projects demonstrating my skills in software development,
+      architecture, and problem-solving.
+    </p>
+  </header>
+
+  <div class="projects-grid">
+
+    {% for project in projects %}
+    <div class="project-card">
+        {% if project.image %}
+        <div class="project-image">
+          <img src="{{ project.image.url }}" alt="{{ project.title }}">
+        </div>
+        {% endif %}
+
+      <div class="project-body">
+        <h3 class="project-title">{{ project.title }}</h3>
+    
+        <p class="project-description">
+          {{ project.description|truncatewords:25 }}
+        </p>
+
+        <div class="project-tech">
+          {% for tech in project.tech_stack.all %}
+          <span class="tech-badge">{{ tech.name }}</span>
+          {% endfor %}
+        </div>
+      </div>
+
+      <div class="project-links">
+        {% if project.github_url %}
+        <a href="{{ project.github_url }}" target="_blank" class="btn-outline">
+          GitHub
+        </a>
+        {% endif %}
+
+        {% if project.live_url %}
+        <a href="{{ project.live_url }}" target="_blank" class="btn-primary">
+          Live Demo
+        </a>
+        {% endif %}
+      </div>
+
+    </div>
+    {% endfor %}
+
+  </div>
+
+</section>
+{% endblock %}

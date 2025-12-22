@@ -1,0 +1,25 @@
+{%  extends "base.html" %}
+{% load static %}
+{% block content %}
+<section class="hero">
+  <div class="hero-content">
+    <p class="intro">Hi, I'm Erastus</p>
+    <h1>Software Engineer Building Scalable Web Applications</h1>
+    <p>
+      I design and develop secure, high-performance software and web applications using  modern backend ,frontend and  databases technologies. 
+      Turning complex problems into clean architecture, maintainable software.
+    </p>
+    
+    <div class="hero-buttons">
+      <a href="{% url 'projects:project' %}" class="btn btn-primary">View Projects</a>
+      <a href="{% url 'contacts:contact' %}" class="btn btn-secondary">Contact Me</a>
+    </div>
+
+  </div>
+
+  <div class="hero-image">
+    <img src="{%  static 'images/software _engineer _image.jpg' %}" alt="Software Engineer"/>
+  </div>
+</section>
+
+{% endblock%}
