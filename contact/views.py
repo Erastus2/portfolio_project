@@ -20,14 +20,17 @@ def contact_view(request):
                 email=email,
                 message=message_content
             )
-            email_message = EmailMessage(
-                subject=f"{subject_content} from {name}",
-                body=message_content,
-                from_email=settings.DEFAULT_FROM_EMAIL,
-                to=[settings.DEFAULT_FROM_EMAIL],
-                headers={'Reply-To': email}  # sets reply-to for older Django versions
-            )
-            email_message.send(fail_silently=False)
+            try:
+                email_message = EmailMessage(
+                    subject=f"{subject_content} from {name}",
+                    body=message_content,
+                    from_email=settings.DEFAULT_FROM_EMAIL,
+                    to=[settings.DEFAULT_FROM_EMAIL],
+                    headers={'Reply-To': email}  # sets reply-to for older Django versions
+                )
+                email_message.send()
+            except Exception as e:
+                print("Email failed:", e)
 
             return redirect('contacts:contact_success')  # optional success page
 
