@@ -1,0 +1,1078 @@
+[
+{
+    "model": "contenttypes.contenttype",
+    "fields": {
+        "app_label": "admin",
+        "model": "logentry"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "fields": {
+        "app_label": "auth",
+        "model": "permission"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "fields": {
+        "app_label": "auth",
+        "model": "group"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "fields": {
+        "app_label": "auth",
+        "model": "user"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "fields": {
+        "app_label": "contenttypes",
+        "model": "contenttype"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "fields": {
+        "app_label": "sessions",
+        "model": "session"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "fields": {
+        "app_label": "skills",
+        "model": "techitem"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "fields": {
+        "app_label": "skills",
+        "model": "techcategory"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "fields": {
+        "app_label": "skills",
+        "model": "techgroup"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "fields": {
+        "app_label": "projects",
+        "model": "project"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "fields": {
+        "app_label": "blog",
+        "model": "blogcontentblock"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "fields": {
+        "app_label": "blog",
+        "model": "blogpost"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "fields": {
+        "app_label": "contact",
+        "model": "contactmessage"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "2fmydtzaon7tkuquc3y2gq9xsyqnre7a",
+    "fields": {
+        "session_data": ".eJxVjE0OwiAYBe_C2pBCgYJL956h-f6wVQNJaVfGu2uTLnT7Zua91AjbOo1bk2WcWZ2VUaffDYEeUnbAdyi3qqmWdZlR74o-aNPXyvK8HO7fwQRt-ta-sxl8pD6BZxKOYQhsXeCeJbFNAzrBLgpyzgGpY8J-yCmaYCha59X7AwGNOKY:1vWsng:2-zjCQkET0FVmKJvYcuW6N5aytZODhpTA8_0jOieYgk",
+        "expire_date": "2026-01-03T08:58:56.078Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "qzjpq6kqlv9m1r5fotw70gearloszlmn",
+    "fields": {
+        "session_data": ".eJxVjE0OwiAYBe_C2pBCgYJL956h-f6wVQNJaVfGu2uTLnT7Zua91AjbOo1bk2WcWZ2VUaffDYEeUnbAdyi3qqmWdZlR74o-aNPXyvK8HO7fwQRt-ta-sxl8pD6BZxKOYQhsXeCeJbFNAzrBLgpyzgGpY8J-yCmaYCha59X7AwGNOKY:1vXGka:vaXaAihk7g4D-Gp-OEIzEuqEiHseUTneRGdtMmKQH_k",
+        "expire_date": "2026-01-04T10:33:20.946Z"
+    }
+},
+{
+    "model": "skills.techgroup",
+    "pk": 1,
+    "fields": {
+        "name": "Tech Stack",
+        "slug": "tech-stack",
+        "description": "The technologies I use daily for building scalable working applications",
+        "order": 1
+    }
+},
+{
+    "model": "skills.techcategory",
+    "pk": 1,
+    "fields": {
+        "group": 1,
+        "name": "Frontend",
+        "slug": "frontend",
+        "description": "Frontend technologies for User Interaction part",
+        "order": 1
+    }
+},
+{
+    "model": "skills.techcategory",
+    "pk": 4,
+    "fields": {
+        "group": 1,
+        "name": "Backend",
+        "slug": "backend",
+        "description": "Used in the business logic and control of the project",
+        "order": 0
+    }
+},
+{
+    "model": "skills.techcategory",
+    "pk": 6,
+    "fields": {
+        "group": 1,
+        "name": "Databases",
+        "slug": "databases",
+        "description": "For the storage of the data",
+        "order": 0
+    }
+},
+{
+    "model": "skills.techcategory",
+    "pk": 7,
+    "fields": {
+        "group": 1,
+        "name": "Tools & Version Control:",
+        "slug": "tools-version-control",
+        "description": "Tracking and hosting of the projects",
+        "order": 0
+    }
+},
+{
+    "model": "skills.techcategory",
+    "pk": 8,
+    "fields": {
+        "group": 1,
+        "name": "Software Architecture",
+        "slug": "software-architecture",
+        "description": "The Design of the software",
+        "order": 0
+    }
+},
+{
+    "model": "skills.techcategory",
+    "pk": 9,
+    "fields": {
+        "group": 1,
+        "name": "Design Patterns:",
+        "slug": "design-patterns",
+        "description": "Designing of softwares",
+        "order": 0
+    }
+},
+{
+    "model": "skills.techitem",
+    "pk": 1,
+    "fields": {
+        "category": 1,
+        "name": "HTML",
+        "slug": "html",
+        "description": "Hypertext Markup Language",
+        "proficiency": "advanced",
+        "is_core": true,
+        "created_at": "2025-12-18T10:11:52.544Z"
+    }
+},
+{
+    "model": "skills.techitem",
+    "pk": 2,
+    "fields": {
+        "category": 1,
+        "name": "CSS",
+        "slug": "css",
+        "description": "Cascading Style Sheets.",
+        "proficiency": "advanced",
+        "is_core": true,
+        "created_at": "2025-12-18T10:25:33.210Z"
+    }
+},
+{
+    "model": "skills.techitem",
+    "pk": 3,
+    "fields": {
+        "category": 1,
+        "name": "JavaScript",
+        "slug": "javascript",
+        "description": "JavaScript is a high-level, versatile programming language used to make web pages interactive, handle events, manipulate the DOM, and create dynamic web applications.",
+        "proficiency": "advanced",
+        "is_core": true,
+        "created_at": "2025-12-18T10:29:18.324Z"
+    }
+},
+{
+    "model": "skills.techitem",
+    "pk": 4,
+    "fields": {
+        "category": 4,
+        "name": "Python( Django, Flask)",
+        "slug": "python-django-flask",
+        "description": "High efficient to use",
+        "proficiency": "intermediate",
+        "is_core": true,
+        "created_at": "2025-12-19T07:40:05.690Z"
+    }
+},
+{
+    "model": "skills.techitem",
+    "pk": 5,
+    "fields": {
+        "category": 6,
+        "name": "SQL",
+        "slug": "sql",
+        "description": "For manipulating databases",
+        "proficiency": "advanced",
+        "is_core": true,
+        "created_at": "2025-12-19T07:44:49.564Z"
+    }
+},
+{
+    "model": "skills.techitem",
+    "pk": 6,
+    "fields": {
+        "category": 6,
+        "name": "MySQL",
+        "slug": "mysql",
+        "description": "For storage of data",
+        "proficiency": "advanced",
+        "is_core": true,
+        "created_at": "2025-12-19T07:45:40.242Z"
+    }
+},
+{
+    "model": "skills.techitem",
+    "pk": 7,
+    "fields": {
+        "category": 7,
+        "name": "Git, GitHub, API Integration, Postman",
+        "slug": "git-github-api-integration-postman",
+        "description": "Project management",
+        "proficiency": "intermediate",
+        "is_core": true,
+        "created_at": "2025-12-19T07:48:36.945Z"
+    }
+},
+{
+    "model": "skills.techitem",
+    "pk": 8,
+    "fields": {
+        "category": 8,
+        "name": "Monolith, Layered,Hexagonal, Microservices (basic), RESTful APIs, Client-Server",
+        "slug": "monolith-layeredhexagonal-microservices-basic-rest",
+        "description": "Types of architectures",
+        "proficiency": "basic",
+        "is_core": false,
+        "created_at": "2025-12-19T07:51:57.969Z"
+    }
+},
+{
+    "model": "skills.techitem",
+    "pk": 9,
+    "fields": {
+        "category": 9,
+        "name": "Singleton, Factory, Observer, Strategy, Repository, Decorator, Adapter, Command",
+        "slug": "singleton-factory-observer-strategy-repository-dec",
+        "description": "The patterns I use when designing the software",
+        "proficiency": "basic",
+        "is_core": false,
+        "created_at": "2025-12-19T07:55:03.322Z"
+    }
+},
+{
+    "model": "projects.project",
+    "pk": 1,
+    "fields": {
+        "title": "My Portfolio website",
+        "slug": "my-portfolio-website",
+        "description": "It is  showcasing my skills on what I have done over time in the tech industry",
+        "image": "projects/Portfolio_homepage.JPG",
+        "github_url": "https://github.com/Erastus2/FoodMenuweb",
+        "live_url": "https://github.com/Erastus2/FoodMenuweb",
+        "is_featured": true,
+        "created_at": "2025-12-19T14:05:36.604Z",
+        "tech_stack": [
+            2,
+            7,
+            1,
+            4,
+            5
+        ]
+    }
+},
+{
+    "model": "projects.project",
+    "pk": 2,
+    "fields": {
+        "title": "Task maste application",
+        "slug": "task-maste-application",
+        "description": "It allows you to track your activities during the day for effective time management",
+        "image": "projects/Task_Master.JPG",
+        "github_url": "https://github.com/Erastus2/task-master-flask-project",
+        "live_url": "https://github.com/Erastus2/task-master-flask-project",
+        "is_featured": true,
+        "created_at": "2025-12-19T15:04:50.572Z",
+        "tech_stack": [
+            2,
+            1,
+            4,
+            5
+        ]
+    }
+},
+{
+    "model": "projects.project",
+    "pk": 3,
+    "fields": {
+        "title": "Django Beginner Project",
+        "slug": "school-management-system",
+        "description": "This is a beginner-friendly Django project designed to introduce the fundamentals of web development using the Django framework. It demonstrates how to create dynamic web pages, handle user input through forms, manage data with a database, and structure a Django application with models, views, and templates.",
+        "image": "projects/django_practice.JPG",
+        "github_url": "https://github.com/Erastus2/django_beginner_series",
+        "live_url": "https://github.com/Erastus2/django_beginner_series",
+        "is_featured": true,
+        "created_at": "2025-12-19T15:09:22.157Z",
+        "tech_stack": [
+            2,
+            1,
+            4,
+            5
+        ]
+    }
+},
+{
+    "model": "contact.contactmessage",
+    "pk": 1,
+    "fields": {
+        "name": "Erastus Kipkorir Kemboi",
+        "email": "erastuskorir494@gmail.com",
+        "message": "Hello there,\r\nI hope you are doing well.\r\nThank you",
+        "created_at": "2025-12-20T13:31:15.755Z"
+    }
+},
+{
+    "model": "contact.contactmessage",
+    "pk": 2,
+    "fields": {
+        "name": "Erastus Kipkorir Kemboi",
+        "email": "erastuskorir494@gmail.com",
+        "message": "Hello there,\r\nI hope you are doing well.\r\nThank you",
+        "created_at": "2025-12-20T13:32:45.879Z"
+    }
+},
+{
+    "model": "contact.contactmessage",
+    "pk": 3,
+    "fields": {
+        "name": "Erastus Kipkorir Kemboi",
+        "email": "erastuskorir494@gmail.com",
+        "message": "Hello there,\r\nI hope you are doing well.\r\nThank you",
+        "created_at": "2025-12-20T13:36:49.312Z"
+    }
+},
+{
+    "model": "contact.contactmessage",
+    "pk": 4,
+    "fields": {
+        "name": "Erastus kemboi",
+        "email": "erastuskorir494@gmail.com",
+        "message": "Hello there,",
+        "created_at": "2025-12-22T12:35:42.939Z"
+    }
+},
+{
+    "model": "blog.blogpost",
+    "pk": 1,
+    "fields": {
+        "title": "How I built my portfolio website using django",
+        "slug": "how-i-built-my-portfolio-website-using-django",
+        "excerpt": "A detailed breakdown of how I designed and built my personal portfolio website using Django, focusing on clean architecture, scalability, and best practices.",
+        "created_at": "2025-12-20T10:32:34.508Z",
+        "published": true
+    }
+},
+{
+    "model": "blog.blogcontentblock",
+    "pk": 1,
+    "fields": {
+        "blog": 1,
+        "block_type": "text",
+        "text": "Building a personal portfolio is an essential step for any software developer. I wanted my portfolio to be more than just a static website, so I chose Django as the backend framework to power dynamic content such as projects, skills, and blog posts.",
+        "image": "",
+        "order": 0
+    }
+},
+{
+    "model": "blog.blogcontentblock",
+    "pk": 2,
+    "fields": {
+        "blog": 1,
+        "block_type": "text",
+        "text": "For the frontend, I used HTML, CSS, and JavaScript to create a responsive and user-friendly interface. CSS Grid and Flexbox were essential in achieving a clean layout across different screen sizes.",
+        "image": "blog/content/Portfolio_homepage.JPG",
+        "order": 0
+    }
+},
+{
+    "model": "blog.blogcontentblock",
+    "pk": 3,
+    "fields": {
+        "blog": 1,
+        "block_type": "image",
+        "text": "",
+        "image": "blog/content/ProjectPortfolio.JPG",
+        "order": 0
+    }
+},
+{
+    "model": "blog.blogcontentblock",
+    "pk": 4,
+    "fields": {
+        "blog": 1,
+        "block_type": "text",
+        "text": "One of the key advantages of this setup is the ability to manage all content from the Django Admin panel. Projects, skills, and blog posts can be added or updated without modifying any frontend code.\r\n\r\nIn conclusion, building my portfolio with Django allowed me to apply real-world best practices such as MVC architecture, reusable components, and clean separation of concerns. This project not only showcases my technical skills but also serves as a solid foundation for future enhancements.",
+        "image": "",
+        "order": 0
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can add log entry",
+        "content_type": [
+            "admin",
+            "logentry"
+        ],
+        "codename": "add_logentry"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can change log entry",
+        "content_type": [
+            "admin",
+            "logentry"
+        ],
+        "codename": "change_logentry"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can delete log entry",
+        "content_type": [
+            "admin",
+            "logentry"
+        ],
+        "codename": "delete_logentry"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can view log entry",
+        "content_type": [
+            "admin",
+            "logentry"
+        ],
+        "codename": "view_logentry"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can add permission",
+        "content_type": [
+            "auth",
+            "permission"
+        ],
+        "codename": "add_permission"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can change permission",
+        "content_type": [
+            "auth",
+            "permission"
+        ],
+        "codename": "change_permission"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can delete permission",
+        "content_type": [
+            "auth",
+            "permission"
+        ],
+        "codename": "delete_permission"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can view permission",
+        "content_type": [
+            "auth",
+            "permission"
+        ],
+        "codename": "view_permission"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can add group",
+        "content_type": [
+            "auth",
+            "group"
+        ],
+        "codename": "add_group"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can change group",
+        "content_type": [
+            "auth",
+            "group"
+        ],
+        "codename": "change_group"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can delete group",
+        "content_type": [
+            "auth",
+            "group"
+        ],
+        "codename": "delete_group"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can view group",
+        "content_type": [
+            "auth",
+            "group"
+        ],
+        "codename": "view_group"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can add user",
+        "content_type": [
+            "auth",
+            "user"
+        ],
+        "codename": "add_user"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can change user",
+        "content_type": [
+            "auth",
+            "user"
+        ],
+        "codename": "change_user"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can delete user",
+        "content_type": [
+            "auth",
+            "user"
+        ],
+        "codename": "delete_user"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can view user",
+        "content_type": [
+            "auth",
+            "user"
+        ],
+        "codename": "view_user"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can add content type",
+        "content_type": [
+            "contenttypes",
+            "contenttype"
+        ],
+        "codename": "add_contenttype"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can change content type",
+        "content_type": [
+            "contenttypes",
+            "contenttype"
+        ],
+        "codename": "change_contenttype"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can delete content type",
+        "content_type": [
+            "contenttypes",
+            "contenttype"
+        ],
+        "codename": "delete_contenttype"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can view content type",
+        "content_type": [
+            "contenttypes",
+            "contenttype"
+        ],
+        "codename": "view_contenttype"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can add session",
+        "content_type": [
+            "sessions",
+            "session"
+        ],
+        "codename": "add_session"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can change session",
+        "content_type": [
+            "sessions",
+            "session"
+        ],
+        "codename": "change_session"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can delete session",
+        "content_type": [
+            "sessions",
+            "session"
+        ],
+        "codename": "delete_session"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can view session",
+        "content_type": [
+            "sessions",
+            "session"
+        ],
+        "codename": "view_session"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can add tech item",
+        "content_type": [
+            "skills",
+            "techitem"
+        ],
+        "codename": "add_techitem"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can change tech item",
+        "content_type": [
+            "skills",
+            "techitem"
+        ],
+        "codename": "change_techitem"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can delete tech item",
+        "content_type": [
+            "skills",
+            "techitem"
+        ],
+        "codename": "delete_techitem"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can view tech item",
+        "content_type": [
+            "skills",
+            "techitem"
+        ],
+        "codename": "view_techitem"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can add tech category",
+        "content_type": [
+            "skills",
+            "techcategory"
+        ],
+        "codename": "add_techcategory"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can change tech category",
+        "content_type": [
+            "skills",
+            "techcategory"
+        ],
+        "codename": "change_techcategory"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can delete tech category",
+        "content_type": [
+            "skills",
+            "techcategory"
+        ],
+        "codename": "delete_techcategory"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can view tech category",
+        "content_type": [
+            "skills",
+            "techcategory"
+        ],
+        "codename": "view_techcategory"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can add tech group",
+        "content_type": [
+            "skills",
+            "techgroup"
+        ],
+        "codename": "add_techgroup"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can change tech group",
+        "content_type": [
+            "skills",
+            "techgroup"
+        ],
+        "codename": "change_techgroup"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can delete tech group",
+        "content_type": [
+            "skills",
+            "techgroup"
+        ],
+        "codename": "delete_techgroup"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can view tech group",
+        "content_type": [
+            "skills",
+            "techgroup"
+        ],
+        "codename": "view_techgroup"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can add project",
+        "content_type": [
+            "projects",
+            "project"
+        ],
+        "codename": "add_project"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can change project",
+        "content_type": [
+            "projects",
+            "project"
+        ],
+        "codename": "change_project"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can delete project",
+        "content_type": [
+            "projects",
+            "project"
+        ],
+        "codename": "delete_project"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can view project",
+        "content_type": [
+            "projects",
+            "project"
+        ],
+        "codename": "view_project"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can add blog content block",
+        "content_type": [
+            "blog",
+            "blogcontentblock"
+        ],
+        "codename": "add_blogcontentblock"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can change blog content block",
+        "content_type": [
+            "blog",
+            "blogcontentblock"
+        ],
+        "codename": "change_blogcontentblock"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can delete blog content block",
+        "content_type": [
+            "blog",
+            "blogcontentblock"
+        ],
+        "codename": "delete_blogcontentblock"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can view blog content block",
+        "content_type": [
+            "blog",
+            "blogcontentblock"
+        ],
+        "codename": "view_blogcontentblock"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can add blog post",
+        "content_type": [
+            "blog",
+            "blogpost"
+        ],
+        "codename": "add_blogpost"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can change blog post",
+        "content_type": [
+            "blog",
+            "blogpost"
+        ],
+        "codename": "change_blogpost"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can delete blog post",
+        "content_type": [
+            "blog",
+            "blogpost"
+        ],
+        "codename": "delete_blogpost"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can view blog post",
+        "content_type": [
+            "blog",
+            "blogpost"
+        ],
+        "codename": "view_blogpost"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can add contact message",
+        "content_type": [
+            "contact",
+            "contactmessage"
+        ],
+        "codename": "add_contactmessage"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can change contact message",
+        "content_type": [
+            "contact",
+            "contactmessage"
+        ],
+        "codename": "change_contactmessage"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can delete contact message",
+        "content_type": [
+            "contact",
+            "contactmessage"
+        ],
+        "codename": "delete_contactmessage"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can view contact message",
+        "content_type": [
+            "contact",
+            "contactmessage"
+        ],
+        "codename": "view_contactmessage"
+    }
+},
+{
+    "model": "auth.user",
+    "fields": {
+        "password": "pbkdf2_sha256$1000000$EF2n7bpdm28imxZUr6q3ZJ$QSwBmf4IzohS6mGRyyYzWwuAvQclRViWmzuC8HcVpiE=",
+        "last_login": "2025-12-21T10:33:20.834Z",
+        "is_superuser": true,
+        "username": "Erastus",
+        "first_name": "",
+        "last_name": "",
+        "email": "erastuskorir494@gmail.com",
+        "is_staff": true,
+        "is_active": true,
+        "date_joined": "2025-12-18T09:34:24Z",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 1,
+    "fields": {
+        "action_time": "2025-12-18T10:07:13.745Z",
+        "user": [
+            "Erastus"
+        ],
+        "content_type": [
+            "skills",
+            "techgroup"
+        ],
+        "object_id": "1",
+        "object_repr": "Tech Stack",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 2,
+    "fields": {
+        "action_time": "2025-12-18T10:08:31.849Z",
+        "user": ["Erastus"],
+        "content_type": ["skills", "techcategory"],
+        "object_id": "1",
+        "object_repr": "Frontend",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+}
+]

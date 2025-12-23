@@ -126,33 +126,33 @@ body.dark {
 /* 📱 Mobile styles */
 @media (max-width: 600px) {
   .nav-container {
-    padding-right: 2rem;
-    padding-left: 1rem;
+    padding-right: 1rem;  /* reduced for smaller screens */
+    padding-left: 0.5rem; /* reduced for smaller screens */
   }
+
   .nav-links {
     position: absolute;
-    top: 64px;
-    left: 0;
-    width: 100%;
-    max-width: fit-content;
-    max-height: 50vh;     /* LIMIT HEIGHT */
-    overflow-y: auto;
+    top: 0;
+    right: 1rem;
+    overflow: hidden;
     background: #203a43;
-    overflow: hidden;   /* ✅ REMOVE SCROLLBAR */
-    display: none;      /* hidden by default */
-    padding: 1rem 0;
+    display: none;        /* hidden by default */
+    padding-right: 1rem;    /* smaller padding */
+    flex-direction: column;
+    gap: 0.25rem;
+    padding-left: 0.5rem;
+    align-items: flex-start;
     z-index: 999;
+    border-radius: 5px;
   }
-  .nav-group{
-    margin-left: 0;
-    padding-left: 10px;
+  .btn {
+    text-align: center;
+    margin: 0.25rem 0;
   }
-  .btn{
-  width: max-content;
-}
-.themeToggle{
-  display: none;
-}
+
+  .themeToggle {
+    display: none;
+  }
 
   .nav-links.show {
     display: flex;
@@ -163,6 +163,11 @@ body.dark {
     z-index: 1000;
   }
 }
+
+
+
+  
+
 @media(min-width: 601px) and (max-width:784px) {
   .nav-group{
     width: 100%;

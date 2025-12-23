@@ -26,7 +26,7 @@ SECRET_KEY =config('SECRET_KEY') # 'django-insecure-qg8j=l+n6mvp+@zq9+hb71(261%4
 DEBUG =config('DEBUG',default=False, cast=bool) 
 
 import os
-
+import dj_database_url
 ALLOWED_HOSTS = os.environ.get(
     "ALLOWED_HOSTS",
     "localhost,127.0.0.1"
@@ -81,14 +81,39 @@ WSGI_APPLICATION = 'portfolio_project.wsgi.application'
 
 
 # Database
-# https://docs.djangoproject.com/en/5.2/ref/settings/#databases
 
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+
+# DATABASE CONFIGURATION
+DATABASE_URL = os.environ.get("DATABASE_URL")
+
+if DATABASE_URL:
+    # Production (PostgreSQL)
+    DATABASES = {
+        "default": dj_database_url.parse(DATABASE_URL, conn_max_age=600, ssl_require=True)
     }
-}
+else:
+    # Development (SQLite)
+    DATABASES = {
+        "default": {
+            "ENGINE": "django.db.backends.sqlite3",
+            "NAME": BASE_DIR / "db.sqlite3",
+        }
+    }
+
+# DATABASES = {
+#     "default": dj_database_url.config(
+#         default=f"sqlite:///{BASE_DIR / 'db.sqlite3'}",
+#         conn_max_age=600,
+#         ssl_require=True,
+#     )
+# } 
+
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.sqlite3',
+#         'NAME': BASE_DIR / 'db.sqlite3',
+#     }
+# }
 
 
 # Password validation

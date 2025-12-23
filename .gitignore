@@ -1,7 +1,5 @@
-# django
-
-staticfiles/
 media/
+staticfiles/
 *.log
 # python
 __pycache__/
