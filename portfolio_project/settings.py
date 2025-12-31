@@ -84,13 +84,26 @@ WSGI_APPLICATION = 'portfolio_project.wsgi.application'
 
 
 # DATABASE CONFIGURATION
-DATABASE_URL = os.environ.get("DATABASE_URL")
+import os
 
-if DATABASE_URL:
-    # Production (PostgreSQL)
-    DATABASES = {
-        "default": dj_database_url.parse(DATABASE_URL, conn_max_age=600, ssl_require=True)
+MYSQL_DB = os.environ.get("MYSQL_DB")
+
+if MYSQL_DB:
+    # Production (MySQL)
+   DATABASES = {
+    "default": {
+        "ENGINE": "django.db.backends.mysql",
+        "NAME": os.environ.get("MYSQL_DB"),
+        "USER": os.environ.get("MYSQL_USER"),
+        "PASSWORD": os.environ.get("MYSQL_PASSWORD"),
+        "HOST": os.environ.get("MYSQL_HOST"),
+        "PORT": os.environ.get("MYSQL_PORT", "3306"),
+        "OPTIONS": {
+            "init_command": "SET sql_mode='STRICT_TRANS_TABLES'"
+        },
     }
+}
+
 else:
     # Development (SQLite)
     DATABASES = {
@@ -99,6 +112,7 @@ else:
             "NAME": BASE_DIR / "db.sqlite3",
         }
     }
+
 
 # DATABASES = {
 #     "default": dj_database_url.config(
